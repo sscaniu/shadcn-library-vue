@@ -1,0 +1,147 @@
+@import 'variables';
+@import 'utilities';
+@import 'fonts';
+@import 'parts/tooltips';
+@import 'parts/alert';
+@import 'parts/tags';
+@import 'element-plus/el-drawer';
+@import 'element-plus/el-overlay';
+@import 'element-plus/el-popover';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  line-height: 150%;
+  color: var(--gray-700);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --medium-bp: 40rem;
+  --large-bp: 64rem;
+  --xlarge-bp: 87.5rem;
+}
+
+body {
+  margin: 0 auto;
+  border: 1px solid var(--gray-200);
+  background-color: var(--gray-100);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1900px;
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 1900px;
+  background-color: white;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+a {
+  color: var(--primary-500);
+}
+
+a:hover {
+  color: var(--primary-500);
+  transition: color 0.3s ease;
+
+  svg {
+    color: currentColor;
+  }
+}
+
+a,
+a:focus,
+a:visited,
+a:active,
+button,
+input[type='checkbox'] {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  min-width: fit-content;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  margin: 0;
+  box-shadow: none;
+}
+
+input[type='number'] {
+  appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray-200);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-200);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--gray-50);
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: var(--gray-100);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
